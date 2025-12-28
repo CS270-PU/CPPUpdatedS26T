@@ -1,0 +1,49 @@
+# Prerequisites
+*.d
+
+# Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.lai
+*.la
+
+# Executables
+*.exe
+*.out
+*.app
+
+# PDFs
+*.pdf
+
+# Build systems
+build/
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+cmake_install.cmake
+Testing/
+
+# GoogleTest
+googletest/
+
+# VS Code
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+
+# macOS
+.DS_Store

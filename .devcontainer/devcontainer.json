@@ -1,0 +1,17 @@
+{
+  "name": "CS270 C++",
+  "build": { "dockerfile": "Dockerfile" },
+
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "vadimcn.vscode-lldb",
+        "matepek.vscode-catch2-test-adapter",
+        "analytic-signal.preview-pdf"
+      ]
+    }
+  }
+}

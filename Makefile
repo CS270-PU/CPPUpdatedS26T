@@ -1,5 +1,5 @@
-CPP_COMPILER = clang++
-CXXFLAGS = -g -O0 -Wall -fno-omit-frame-pointer -fstandalone-debug
+CPP_COMPILER = g++
+CXXFLAGS = -g -O0 -Wall -fno-omit-frame-pointer
 CPP_VERSION = c++17
 
 INCLUDES = -Iinclude
@@ -38,7 +38,7 @@ valgrind: all
 # One command to configure/build/run ALL unit tests
 runTests:
 	rm -rf $(BUILD_DIR)
-	cmake -S . -B $(BUILD_DIR) -DCMAKE_BUILD_TYPE=Debug
+	cmake -S . -B $(BUILD_DIR) -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++
 	cmake --build $(BUILD_DIR)
 	cd $(BUILD_DIR) && ctest -V
 

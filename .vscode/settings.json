@@ -17,7 +17,7 @@
   "C_Cpp.vcFormat.space.afterCastCloseParenthesis": true,
   "C_Cpp.vcFormat.space.afterComma": true,
   "cmake.environment": {
-    "CXX": "/usr/bin/clang++-16 -fstandalone-debug -g"
+    "CXX": "/usr/bin/g++"
   },
   "files.associations": {
     "iostream": "cpp"
